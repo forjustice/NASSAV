@@ -177,7 +177,7 @@ detail页：
 ![](pic/gallery-detail.png)
 
 前端部署方式：
-1. 先调整后端的配置：
+1. 先调整`frontend/src/api/videos.js`中后端的配置：
 ```js
 import axios from 'axios'
 const API_BASE = 'http://192.168.31.61:31471' // 改成自己的ip
@@ -187,7 +187,7 @@ const API_BASE = 'http://192.168.31.61:31471' // 改成自己的ip
 cd frontend
 npm run build
 ```
-3. 使用nginx部署静态网页：127.0.0.1:5177
+3. 使用nginx部署静态网页：`127.0.0.1:5177`
 
 ## 配置说明
 
