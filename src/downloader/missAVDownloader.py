@@ -20,6 +20,10 @@ class MissAVDownloader(Downloader):
         content = self._fetch_html(url)
         if content: return content
 
+        url = f'https://{self.domain}/dm13/cn/{avid}'.lower()
+        content = self._fetch_html(url)
+        if content: return content
+
         return None
 
     def parseHTML(self, html: str) -> Optional[AVDownloadInfo]:
